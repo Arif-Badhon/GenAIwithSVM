@@ -4,14 +4,22 @@
 #
 #    pip-compile requirements.in
 #
+certifi==2024.12.14
+    # via requests
+charset-normalizer==3.4.1
+    # via requests
 contourpy==1.3.1
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
 fonttools==4.55.3
     # via matplotlib
+idna==3.10
+    # via requests
 joblib==1.4.2
     # via scikit-learn
+kagglehub==0.3.6
+    # via -r requirements.in
 kiwisolver==1.4.8
     # via matplotlib
 matplotlib==3.10.0
@@ -28,7 +36,9 @@ numpy==2.2.1
     #   scipy
     #   seaborn
 packaging==24.2
-    # via matplotlib
+    # via
+    #   kagglehub
+    #   matplotlib
 pandas==2.2.3
     # via
     #   -r requirements.in
@@ -43,6 +53,8 @@ python-dateutil==2.9.0.post0
     #   pandas
 pytz==2024.2
     # via pandas
+requests==2.32.3
+    # via kagglehub
 scikit-learn==1.6.0
     # via -r requirements.in
 scipy==1.15.0
@@ -53,5 +65,9 @@ six==1.17.0
     # via python-dateutil
 threadpoolctl==3.5.0
     # via scikit-learn
+tqdm==4.67.1
+    # via kagglehub
 tzdata==2024.2
     # via pandas
+urllib3==2.3.0
+    # via requests
